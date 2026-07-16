@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | LongDragon Technologies</title>
+    <meta
+      name="description"
+      content="Contact LongDragon Technologies, an independent Android developer on Google Play."
+    />
+    <meta name="author" content="LongDragon Technologies" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://longdragon-technologies.github.io/contact.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact | LongDragon Technologies" />
+    <meta
+      property="og:description"
+      content="Contact LongDragon Technologies for Android app support and developer inquiries."
+    />
+    <meta property="og:image" content="assets/logo.png" />
+    <meta property="og:url" content="https://longdragon-technologies.github.io/contact.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#0f9d58" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="LongDragon Technologies home">
+          <img src="assets/logo.png" alt="" class="brand-mark" />
+          <span>LongDragon Technologies</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="site-menu">
+          <a href="index.html">Home</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Support and inquiries</p>
+          <h1>Contact LongDragon Technologies</h1>
+          <p>
+            For app support, privacy questions, or business inquiries, contact the developer using
+            the email below.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-layout">
+          <article class="contact-panel">
+            <p class="eyebrow">Primary contact</p>
+            <h2>Email</h2>
+            <a class="contact-email" href="mailto:longdragon.official@gmail.com">
+              longdragon.official@gmail.com
+            </a>
+            <p>
+              Please include the app name, your device model, Android version, and a clear
+              description of the issue when requesting support.
+            </p>
+          </article>
+
+          <aside class="contact-panel muted-panel">
+            <h2>Developer profile</h2>
+            <dl class="compact-list">
+              <div>
+                <dt>Developer name</dt>
+                <dd>LongDragon Technologies</dd>
+              </div>
+              <div>
+                <dt>Developer type</dt>
+                <dd>Independent Android Developer</dd>
+              </div>
+              <div>
+                <dt>Contact</dt>
+                <dd>
+                  <a href="mailto:longdragon.official@gmail.com">longdragon.official@gmail.com</a>
+                </dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>&copy; <span id="year"></span> LongDragon Technologies. All rights reserved.</p>
+        <div>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const navToggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      navToggle.addEventListener("click", () => {
+        const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+        navToggle.setAttribute("aria-expanded", String(!isOpen));
+        navLinks.classList.toggle("is-open");
+      });
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

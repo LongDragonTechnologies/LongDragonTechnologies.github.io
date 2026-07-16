@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | LongDragon Technologies</title>
+    <meta
+      name="description"
+      content="Privacy policy template for Android applications published by LongDragon Technologies on Google Play."
+    />
+    <meta name="author" content="LongDragon Technologies" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://longdragon-technologies.github.io/privacy-policy.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Privacy Policy | LongDragon Technologies" />
+    <meta
+      property="og:description"
+      content="Android app privacy policy for LongDragon Technologies."
+    />
+    <meta property="og:image" content="assets/logo.png" />
+    <meta property="og:url" content="https://longdragon-technologies.github.io/privacy-policy.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#0f9d58" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="LongDragon Technologies home">
+          <img src="assets/logo.png" alt="" class="brand-mark" />
+          <span>LongDragon Technologies</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="site-menu">
+          <a href="index.html">Home</a>
+          <a href="privacy-policy.html" aria-current="page">Privacy Policy</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">LongDragon Technologies</p>
+          <h1>Privacy Policy</h1>
+          <p>
+            This privacy policy applies to Android applications published by LongDragon
+            Technologies on Google Play, unless a specific app provides its own policy.
+          </p>
+          <p class="updated">Last updated: July 16, 2026</p>
+        </div>
+      </section>
+
+      <section class="section policy-section">
+        <div class="container narrow policy-card">
+          <h2>Data Collection</h2>
+          <p>
+            Our apps may collect information needed to provide app functionality, improve user
+            experience, diagnose technical issues, and comply with Google Play requirements. The
+            exact data collected depends on each app's features and may include app usage data,
+            crash reports, diagnostics, preferences, and information you choose to provide.
+          </p>
+
+          <h2>Device Permissions</h2>
+          <p>
+            Some apps may request device permissions such as internet access, notifications,
+            storage, camera, microphone, location, or other Android permissions. Permissions are
+            requested only when needed for app features. You can manage or revoke permissions in
+            your Android device settings at any time.
+          </p>
+
+          <h2>Advertising</h2>
+          <p>
+            Our apps may display advertisements through Google AdMob. AdMob may collect and use
+            advertising identifiers, device information, approximate location, app interaction data,
+            and other information to provide, limit, measure, and improve ads. You can manage ad
+            personalization through your Google account and Android device settings.
+          </p>
+
+          <h2>Third-Party Services</h2>
+          <p>
+            Our apps may use third-party services that collect information according to their own
+            privacy policies. These services may include Google Play Services, Google AdMob,
+            Firebase Analytics, Firebase Crashlytics, or similar app infrastructure providers.
+          </p>
+
+          <h2>Data Security</h2>
+          <p>
+            We use reasonable administrative, technical, and organizational measures to protect
+            information associated with our apps. No digital service can guarantee absolute
+            security, but we work to keep data access limited to legitimate app operations,
+            troubleshooting, analytics, and compliance needs.
+          </p>
+
+          <h2>Children's Privacy</h2>
+          <p>
+            Our apps are not intended to knowingly collect personal information from children
+            without appropriate consent. If you believe a child has provided personal information,
+            please contact us so we can review and take appropriate action.
+          </p>
+
+          <h2>Changes to This Policy</h2>
+          <p>
+            We may update this privacy policy from time to time. Any updates will be posted on this
+            page with a revised last updated date.
+          </p>
+
+          <h2>Contact</h2>
+          <p>
+            If you have questions about this privacy policy or an Android app published by
+            LongDragon Technologies, contact us at
+            <a href="mailto:longdragon.official@gmail.com">longdragon.official@gmail.com</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>&copy; <span id="year"></span> LongDragon Technologies. All rights reserved.</p>
+        <div>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const navToggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      navToggle.addEventListener("click", () => {
+        const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+        navToggle.setAttribute("aria-expanded", String(!isOpen));
+        navLinks.classList.toggle("is-open");
+      });
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
